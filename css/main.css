@@ -1,6 +1,67 @@
+/* Loracy */
+#D:before{
+  content: '';
+  animation: test 3s ease-in-out infinite;
+  transition: none;
+}
+
+@keyframes test{
+  0%{
+    opacity: 1;
+    color: #ADADAD;
+    content: '|';
+  }
+  12%{
+    opacity: 1;
+    color: #ADADAD;
+    content:'|';
+  }
+  24%{
+    opacity: 0;
+    color: #ADADAD;
+    content:'|';
+  }
+  36%{
+    opacity: 1;
+    color: #ADADAD;
+    content:'|';
+  }
+  48%{
+    opacity: 1;
+    color: #ADADAD;
+    content:'|';
+  }
+  60%{
+    opacity: 0;
+    color: #ADADAD;
+    content:'|';
+  }
+  72%{
+    opacity: 1;
+    color: #ADADAD;
+    content:'|';
+  }
+  84%{
+    opacity: 1;
+    color: #ADADAD;
+    content:'|';
+  }
+  100%{
+    opacity: 0;
+    color: #ADADAD;
+    content:'|';
+  }
+
+}
+
+/* Loracy */
+
+
+
+
+
 body{
-  -moz-user-select : none;
-  -webkit-user-select: none;
+
 }
 .container{
   max-width: 1080px;
@@ -29,6 +90,10 @@ div.logo:hover .logob{
   margin-top: 50px;
   text-align: center;
   color: #323A3B;
+  height: 150px;
+}
+.typer2{
+  color: #5896A3;
 }
 h1{
   font-family: 'Raleway', sans-serif;
@@ -54,7 +119,7 @@ header img{
   margin-top: 20px;
   margin-left: 20px;
   top: 0;
-  left 0;
+  left: 0;
   z-index: 2;
   width:auto;
   height:50px;
@@ -192,6 +257,18 @@ li a:hover{
   opacity: 1;
 }
 
+@media screen and (max-width: 767px){
+  .project1 p{
+    opacity: 1;
+  }
+
+  .project1 img{
+    background-image: url("../img/pj-bg1.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+  }
+}
+
 /* pj2 */
 .project2 p{
 
@@ -207,6 +284,18 @@ li a:hover{
 .project2:hover p {
   transition:all .5s ease-out;
   opacity: 1;
+}
+
+@media screen and (max-width: 767px){
+  .project2 p{
+    opacity: 1;
+  }
+
+  .project2 img{
+    background-image: url("../img/pj-bg2.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+  }
 }
 
 /* pj3 */
@@ -226,6 +315,18 @@ li a:hover{
   opacity: 1;
 }
 
+@media screen and (max-width: 767px){
+  .project3 p{
+    opacity: 1;
+  }
+
+  .project3 img{
+    background-image: url("../img/pj-bg3.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+  }
+}
+
 /* pj4 */
 .project4 p{
 
@@ -243,22 +344,19 @@ li a:hover{
   opacity: 1;
 }
 
-/* pj5 */
-.project5 p{
+@media screen and (max-width: 767px){
+  .project4 p{
+    opacity: 1;
+  }
 
-  text-align: center;
-  opacity: 0;
+  .project4 img{
+    background-image: url("../img/pj-bg4.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+  }
 }
 
-.project5:hover img{
-  background-image: url("../img/pj-bg5.png");
-  background-size: 80% auto;
-  background-repeat: no-repeat;
-}
-.project5:hover p {
-  transition:all .5s ease-out;
-  opacity: 1;
-}
+
 
 /* pj6 */
 .project6 p{
@@ -277,7 +375,17 @@ li a:hover{
   opacity: 1;
 }
 
+@media screen and (max-width: 767px){
+  .project6 p{
+    opacity: 1;
+  }
 
+  .project6 img{
+    background-image: url("../img/pj-bg6.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+  }
+}
 
 
 /* footer */

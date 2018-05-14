@@ -1,7 +1,16 @@
+window.onload = function(){
+
 $(document).ready(function(){
     $('.animated-icon1,.animated-icon3,.animated-icon4').click(function(){
         $(this).toggleClass('open');
     });
+    if(location.pathname.slice(-10) == 'index.html'){
+      $('#link_portfolio').css('color','#323A3B');
+    }else{
+      $('#link_portfolio').css('color','#ADADAD');
+    }
+  console.log('pathname = ' + location.pathname.slice(-10));
+    
 });
 
 // $(".nav-top .menu #wrapper").click(function() {
@@ -32,3 +41,36 @@ $(document).ready(function(){
     return false;
   }
 });
+
+//text machine
+var theater = theaterJS()
+  
+  theater
+    .on('type:start, erase:start', function () {
+      // add a class to actor's dom element when he starts typing/erasing
+      var actor = theater.getCurrentActor()
+      actor.$element.classList.add('is-typing')
+    })
+    .on('type:end, erase:end', function () {
+      // and then remove it when he's done
+      var actor = theater.getCurrentActor()
+      actor.$element.classList.remove('is-typing')
+    })
+  
+  theater
+    // .addActor('first')
+    .addActor('me')
+    
+  theater
+    // .addScene('first:I am Matthew,', 400)
+    // .addScene('first:I am', 200, '.', 200, '.', 200, '. ')
+    // .addScene('Your father!')
+    .addScene('me:Web', 2000)
+    .addScene('me:UI', 2000)
+    .addScene('me:UX', 2000)
+    .addScene('me:Interaction', 2000)
+    .addScene(theater.replay)
+
+
+  };
+
