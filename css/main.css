@@ -90,7 +90,7 @@ div.logo:hover .logob{
   margin-top: 50px;
   text-align: center;
   color: #323A3B;
-  height: 150px;
+  height: 300px;
 }
 .typer2{
   color: #5896A3;
@@ -221,7 +221,7 @@ li a:hover{
 
 /* mywork */
 .works{
-  margin-top: 50px;
+  margin-top: 00px;
 }
 .projects img{
   width: 100%;
@@ -230,7 +230,7 @@ li a:hover{
 .projects{
   height: 50%;
   display: inline-block;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .projects p{
