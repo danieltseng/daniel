@@ -9,6 +9,11 @@ $(document).ready(function(){
     }else{
       $('#link_portfolio').css('color','#ADADAD');
     }
+    if(location.pathname.slice(-10) == 'about.html'){
+      $('#link_about').css('color','#323A3B');
+    }else{
+      $('#link_about').css('color','#ADADAD');
+    }
   console.log('pathname = ' + location.pathname.slice(-10));
     
 });

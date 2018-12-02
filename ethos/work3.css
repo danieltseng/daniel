@@ -1,0 +1,322 @@
+/* body{
+  -moz-user-select : none;
+  -webkit-user-select: none;
+} */
+.container{
+  padding: 0 !important;
+  max-width: 1880px;
+  margin-top:0px;
+}
+.navbar{
+  padding-top: 20px;
+}
+.logo{
+  margin-left: 30px;;
+}
+.logoh{
+  opacity: 0;
+}
+div.logo:hover .logoh{
+  opacity: 1;
+}
+div.logo:hover .logob{
+  opacity: 0;
+}
+.top-right{
+  margin-right: 20px;
+}
+
+.mainbg{
+  margin-top: 100px;
+  text-align: center;
+  color: #323A3B;
+}
+.mainbg img{
+  width: 76%;
+}
+h1{
+  margin-top: 30px;
+  font-family: 'Hammersmith One', sans-serif;
+  font-weight:bold;
+  color: #323A3B;
+  text-align: center;
+}
+
+.mytitle{
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+.intro{
+  display: block;
+  width:60%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #323A3B;
+}
+
+.intro h2{
+  color:#5896A3;
+  text-align:left; 
+  margin-bottom: 20px;
+}
+
+.intro p{
+  text-align:left; 
+  /* line-height:30px; */
+  word-wrap:break-word;
+}
+
+.section{
+  display: block;
+  margin-bottom: 100px;
+}
+
+.overview{
+  margin-top: 100px;
+}
+
+.user_research{
+  display: inline-block;
+}
+
+.practice{
+  margin-top: 30px;
+  margin-left:3%;
+  margin-right:3%;
+  display: block;
+  width: 44%;
+  float:left;
+}
+
+.learn{
+  margin-top: 30px;
+  margin-left:3%;
+  margin-right:3%;
+  display: block;
+  width: 44%;
+  float:left;  
+}
+
+.brainstorming{
+  display: inline-block;
+}
+
+.flowchart img{
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.wireframe img{
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.icon{
+  margin-top: 30px;
+  margin-left:3%;
+  margin-right:3%;
+  display: block;
+  width: 27%;
+  float:left;
+}
+
+.mockup{
+  display: block;
+  clear: both;
+}
+
+.mockup img{
+  margin: 0;
+}
+
+
+@media (max-width: 767.98px) {
+  .function_map img{
+    height: 150px;
+  }
+}
+.view{
+  margin-top: 60px;
+  text-align: center;
+}
+.view a p{
+  width: 200px;
+  padding: 15px 0;
+  border: 1px solid #FEBC71;
+  border-radius: 3px;
+  background-color: rgba(254,188,113,0);
+  text-align: center;
+  color: rgba(254,188,113,1);
+}
+.view p:hover{
+  background-color: rgba(254,188,113,1);
+  color:#fff;
+  transition:all .3s ease-out;
+}
+.view a{
+  text-decoration: none;
+}
+
+.next a{
+  margin-top: 0px;
+  font-family: 'Raleway', sans-serif;
+  color: #323A3B;
+  text-decoration: none;
+}
+
+ .next a:hover{
+   color:#5896A3;
+ }
+
+
+ /* nav */
+
+ /*幹*/
+ header span.menu {
+ 	display:none;
+ 	font-size:2em;
+ 	position:absolute;
+ 	padding: 0 15px;
+ 	border-radius: 4px;
+ 	top: 0px;
+ 	right: 10px;
+ 	z-index: 2;
+ }
+
+ header img{
+
+   position: absolute;
+   margin-top: 20px;
+   margin-left: 20px;
+   top: 0;
+   left: 0;
+   z-index: 2;
+   width:auto;
+   height:50px;
+ }
+ li{
+   float: right;
+   margin-right: 40px;
+   margin-top: 30px;
+   list-style: none;
+
+ }
+ li a{
+   color: #ADADAD;
+   font-family: 'Raleway', sans-serif;
+   text-decoration: none;
+ }
+
+ li a:hover{
+   color: #323A3B;
+   text-decoration: none;
+ }
+
+ @media screen and (max-width: 767px) {
+
+
+  .practice{
+    clear: both;
+    width: 100%;
+    text-align:left; 
+  }
+
+  .learn{
+    clear: both;
+    width: 100%;
+    text-align:left; 
+  }
+
+  .icon{
+    clear: both;
+    width: 100%;
+    text-align:left; 
+  }
+
+
+
+   .nav-top ul {
+ 		position:absolute;
+ 		top: 0;
+ 		width: 100%;
+ 		display: none;
+ 		background-color: #fff;
+ 		padding-top: 50px;
+ 	}
+
+ 	.nav-top li {
+ 		text-align: center;
+ 		margin-bottom: 10px;
+     float: none;
+ 	}
+
+   #wrapper {
+
+   	border-radius:500px;
+   	margin:10px;
+   	position: relative;
+     padding:80px;
+   	cursor:pointer;
+   }
+
+   .main-item {
+   	width:30px;
+   	height:30px;
+   	position:absolute;
+     z-index: 3;
+     top: 0;
+     right:0;
+     opacity: 1;
+     margin-top: 20px;
+     margin-right: 30px;
+   }
+
+   .line {
+   	position: absolute;
+   	height: 3px;
+   	width:100%;
+   	background:#323A3B;
+   	border-radius:10px;
+   	transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
+   }
+
+   .line01 {
+   	top:19%;
+   }
+
+   .line02 {
+   	top:49%;
+   }
+
+   .line03 {
+   	top:79%;
+   }
+
+   .menu.close .line01 {
+   	transform:rotate(45deg);
+   	top:49%;
+   }
+
+   .menu.close .line02, .menu.close .line03 {
+   	transform:rotate(-45deg);
+   	top:49%;
+   }
+
+
+ }
+ /*幹*/
+
+
+
+/* footer */
+.footer{
+  text-align: center;
+  color: #797979;
+  padding: 30px 0 30px 0px;
+}
