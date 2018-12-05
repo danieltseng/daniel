@@ -1,61 +1,3 @@
-/* Loracy */
-#D:before{
-  content: '';
-  animation: test 3s ease-in-out infinite;
-  transition: none;
-}
-
-@keyframes test{
-  0%{
-    opacity: 1;
-    color: #ADADAD;
-    content: '|';
-  }
-  12%{
-    opacity: 1;
-    color: #ADADAD;
-    content:'|';
-  }
-  24%{
-    opacity: 0;
-    color: #ADADAD;
-    content:'|';
-  }
-  36%{
-    opacity: 1;
-    color: #ADADAD;
-    content:'|';
-  }
-  48%{
-    opacity: 1;
-    color: #ADADAD;
-    content:'|';
-  }
-  60%{
-    opacity: 0;
-    color: #ADADAD;
-    content:'|';
-  }
-  72%{
-    opacity: 1;
-    color: #ADADAD;
-    content:'|';
-  }
-  84%{
-    opacity: 1;
-    color: #ADADAD;
-    content:'|';
-  }
-  100%{
-    opacity: 0;
-    color: #ADADAD;
-    content:'|';
-  }
-
-}
-
-/* Loracy */
-
 
 
 
@@ -65,7 +7,6 @@ body{
 }
 .container{
   max-width: 1080px;
-  margin-top: 200px;
 }
 .navbar{
   padding-top: 20px;
@@ -87,10 +28,10 @@ div.logo:hover .logob{
 }
 
 .intro{
-  margin-top: 50px;
   text-align: center;
   color: #323A3B;
-  height: 300px;
+  padding-top: 40vh;
+  height: 100vh;
 }
 .typer2{
   color: #5896A3;
@@ -221,174 +162,53 @@ li a:hover{
 
 /* mywork */
 .works{
-  margin-top: 00px;
+  margin-top: 0px;
 }
 .projects img{
   width: 100%;
-  /* margin-top: 20px; */
 }
 .projects{
-  height: 50%;
+  height: auto;
   width: 70%;
-  display: inline-block;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  display: block;
+  margin-bottom: 50px;
+  margin-left: 0;
+  margin-right: 0;
 }
-
-.projects p{
-  font-size: 22px;
-  font-family: 'Hammersmith One', sans-serif;
-  font-weight:bold;
-  color: #4F676A;
-}
-
-/* pj1 */
-.project1 p{
-
-  text-align: center;
-  opacity: 0;
-}
-
-.project1:hover img{
-  background-image: url("../img/pj-bg1.png");
+.projects a:hover{
+  background-color: #D6D6D6;
   background-size: 80%;
-  background-repeat: no-repeat;
+  box-shadow: -2px 2px 16px 8px #D6D6D6;
 }
-.project1:hover p {
-  transition:all .5s ease-out;
-  opacity: 1;
+
+.projects img:hover{
+  transform: translate(5px,-5px);
 }
+
+.sc{
+  display: block;
+}
+
+.big{
+display: block;
+}
+.small{
+ display: none;
+}
+
+
 
 @media screen and (max-width: 767px){
-  .project1 p{
-    opacity: 1;
+  
+  .big{
+    display: none;
   }
-
-  .project1 img{
-    background-image: url("../img/pj-bg1.png");
-    background-size: 80%;
-    background-repeat: no-repeat;
-  }
-}
-
-/* pj2 */
-.project2 p{
-
-  text-align: center;
-  opacity: 0;
-}
-
-.project2:hover img{
-  background-image: url("../img/pj-bg2.png");
-  background-size: 80% auto;
-  background-repeat: no-repeat;
-}
-.project2:hover p {
-  transition:all .5s ease-out;
-  opacity: 1;
-}
-
-@media screen and (max-width: 767px){
-  .project2 p{
-    opacity: 1;
-  }
-
-  .project2 img{
-    background-image: url("../img/pj-bg2.png");
-    background-size: 80%;
-    background-repeat: no-repeat;
-  }
-}
-
-/* pj3 */
-.project3 p{
-
-  text-align: center;
-  opacity: 0;
-}
-
-.project3:hover img{
-  background-image: url("../img/pj-bg6.png");
-  background-size: 80% auto;
-  background-repeat: no-repeat;
-}
-.project3:hover p {
-  transition:all .5s ease-out;
-  opacity: 1;
-}
-
-@media screen and (max-width: 767px){
-  .project3 p{
-    opacity: 1;
-  }
-
-  .project3 img{
-    background-image: url("../img/pj-bg6.png");
-    background-size: 80%;
-    background-repeat: no-repeat;
-  }
-}
-
-/* pj4 */
-.project4 p{
-
-  text-align: center;
-  opacity: 0;
-}
-
-.project4:hover img{
-  background-image: url("../img/pj-bg4.png");
-  background-size: 80% auto;
-  background-repeat: no-repeat;
-}
-.project4:hover p {
-  transition:all .5s ease-out;
-  opacity: 1;
-}
-
-@media screen and (max-width: 767px){
-  .project4 p{
-    opacity: 1;
-  }
-
-  .project4 img{
-    background-image: url("../img/pj-bg4.png");
-    background-size: 80%;
-    background-repeat: no-repeat;
+  .small{
+    display: block;
   }
 }
 
 
-
-/* pj6 */
-.project6 p{
-
-  text-align: center;
-  opacity: 0;
-}
-
-.project6:hover img{
-  background-image: url("../img/pj-bg6.png");
-  background-size: 80% auto;
-  background-repeat: no-repeat;
-}
-.project6:hover p {
-  transition:all .5s ease-out;
-  opacity: 1;
-}
-
-@media screen and (max-width: 767px){
-  .project6 p{
-    opacity: 1;
-  }
-
-  .project6 img{
-    background-image: url("../img/pj-bg6.png");
-    background-size: 80%;
-    background-repeat: no-repeat;
-  }
-}
 
 
 /* footer */
@@ -406,6 +226,6 @@ li a:hover{
   text-decoration: none;
 }
 
-.footer a:hover{
-  color: #323A3B;
+.footer img:hover{
+  transform: translate(0px,-3px);
 }

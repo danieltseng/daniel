@@ -320,3 +320,7 @@ h1{
   color: #797979;
   padding: 30px 0 30px 0px;
 }
+
+.footer img:hover{
+  transform: translate(0px,-3px);
+}
