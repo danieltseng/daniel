@@ -53,7 +53,6 @@ h1{
   width:60%;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Raleway', sans-serif;
   text-align: center;
   color: #323A3B;
 }
@@ -62,12 +61,14 @@ h1{
   color:#5896A3;
   text-align:left; 
   margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .intro p{
   text-align:left; 
-  /* line-height:30px; */
+  line-height:1.8;
   word-wrap:break-word;
+  font-family: sans-serif;
 }
 
 .section{
@@ -83,22 +84,9 @@ h1{
   display: inline-block;
 }
 
-.practice{
-  margin-top: 30px;
-  margin-left:3%;
-  margin-right:3%;
-  display: block;
-  width: 44%;
-  float:left;
-}
-
-.learn{
-  margin-top: 30px;
-  margin-left:3%;
-  margin-right:3%;
-  display: block;
-  width: 44%;
-  float:left;  
+.part{
+  margin-top: 50px;
+  text-align:left;
 }
 
 .brainstorming{

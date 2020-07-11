@@ -38,7 +38,7 @@
     margin-top: 30px;
     font-family: 'Hammersmith One', sans-serif;
     font-weight:bold;
-    color: #78BB8E;
+    color: #75A5B0;
     text-align: center;
   }
   
@@ -57,6 +57,7 @@
     color: #323A3B;
   }
   
+
   .intro h2{
     color:#5896A3;
     text-align:left; 
@@ -76,112 +77,25 @@
     margin-bottom: 100px;
   }
 
+  
   .overview{
     margin-top: 100px;
   }
   
-  .user_research{
-    display: inline-block;
-  }
 
-  
-  .user_research img{
-    margin-top: 20px;
-    margin-bottom: 50px;
-    width: 100%;
-  }
   .part{
     margin-top: 50px;
     text-align:left;
   }
   
-  .brainstorming{
-    display: inline-block;
-  }
-  
-  .sketch{
-      margin-bottom: 100px;
-      display: inline-block;
-  }
 
-  .sketch img{
-    margin-top: 20px;
-    margin-bottom: 50px;
-    width: 100%;
-  }
 
-  .flowchart img{
+  .section img{
     margin-top: 20px;
     margin-bottom: 50px;
     width: 100%;
   }
   
-  .wireframe img{
-    margin-top: 0px;
-    margin-bottom: 50px;
-    width: 100%;
-  }
-
-  .wireframe {
-    display: inline-block;
-    margin-bottom: 100px;
-  }
-
-  .wire{
-    margin-top: 30px;
-    margin-left:1%;
-    margin-right:1%;
-    display: block;
-    width: 31%;
-    float:left;  
-  }
-  
-  .icon{
-    margin-top: 30px;
-    margin-left:3%;
-    margin-right:3%;
-    display: block;
-    width: 44%;
-    float:left;
-  }
-  
-  .mockup{
-    display: block;
-    clear: both;
-  }
-  
-  .mockup img{
-    margin: 0;
-    width: 100%;
-  }
-  
-  
-  @media (max-width: 767.98px) {
-    .function_map img{
-      height: 150px;
-    }
-  }
-  .view{
-    margin-top: 60px;
-    text-align: center;
-  }
-  .view a p{
-    width: 200px;
-    padding: 15px 0;
-    border: 1px solid #FEBC71;
-    border-radius: 3px;
-    background-color: rgba(254,188,113,0);
-    text-align: center;
-    color: rgba(254,188,113,1);
-  }
-  .view p:hover{
-    background-color: rgba(254,188,113,1);
-    color:#fff;
-    transition:all .3s ease-out;
-  }
-  .view a{
-    text-decoration: none;
-  }
   
   .next a{
     margin-top: 0px;
@@ -239,45 +153,6 @@
    }
   
    @media screen and (max-width: 767px) {
-  
-  
-    .queue{
-        clear: both;
-        width: 100%;
-        text-align:left; 
-      }
-
-      .wait{
-        clear: both;
-        width: 100%;
-        text-align:left; 
-      }
-
-    .practice{
-      clear: both;
-      width: 100%;
-      text-align:left; 
-    }
-  
-    .learn{
-      clear: both;
-      width: 100%;
-      text-align:left; 
-    }
-
-    .wire{
-      clear: both;
-      width: 100%;
-      text-align:left; 
-    }
-  
-    .icon{
-      clear: both;
-      width: 100%;
-      text-align:left; 
-    }
-  
-  
   
      .nav-top ul {
            position:absolute;
