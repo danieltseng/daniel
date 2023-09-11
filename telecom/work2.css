@@ -38,7 +38,7 @@ h1{
   margin-top: 30px;
   font-family: 'Hammersmith One', sans-serif;
   font-weight:bold;
-  color: #83E2FA;
+  color: #666666;
   text-align: center;
 }
 
@@ -75,6 +75,16 @@ h1{
   margin-bottom: 100px;
 }
 
+.section p{
+  font-family: sans-serif;
+  color: #666666;
+}
+
+.section strong{
+  font-family: sans-serif;
+  color: #333333;
+}
+
 .overview{
   margin-top: 100px;
 }
@@ -106,21 +116,12 @@ h1{
   float:left;  
 }
 
-.brainstorming{
-  display: inline-block;
-}
-
-.flowchart img{
+.section img{
   margin-top: 20px;
   margin-bottom: 50px;
   width: 100%;
 }
 
-.wireframe img{
-  margin-top: 20px;
-  margin-bottom: 50px;
-  width: 100%;
-}
 
 .icon{
   margin-top: 30px;
