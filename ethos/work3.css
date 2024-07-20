@@ -221,6 +221,10 @@ h1{
 
  @media screen and (max-width: 767px) {
 
+  .intro{
+    width: 88%;
+  }
+
 
   .practice{
     clear: both;

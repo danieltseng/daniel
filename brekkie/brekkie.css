@@ -191,7 +191,6 @@ h1{
 
  /* nav */
 
- /*幹*/
  header span.menu {
  	display:none;
  	font-size:2em;
@@ -233,6 +232,10 @@ h1{
  }
 
  @media screen and (max-width: 767px) {
+
+  .intro{
+    width: 88%;
+  }
 
 
   .practice{
@@ -324,7 +327,7 @@ h1{
 
 
  }
- /*幹*/
+
 
 
 

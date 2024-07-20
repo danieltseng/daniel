@@ -153,6 +153,9 @@
    }
   
    @media screen and (max-width: 767px) {
+    .intro{
+      width: 88%;
+    }
   
      .nav-top ul {
            position:absolute;
