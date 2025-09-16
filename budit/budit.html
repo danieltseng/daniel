@@ -15,6 +15,8 @@
   <!-- style -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
   <link rel="stylesheet" href="budit.css">
 
   <!-- font -->
@@ -50,7 +52,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 <header>
-  <nav class="nav-top fixed-top">
+  <nav class="nav-top">
     <div id="wrapper">
       <div class="main-item menu">
         <span class="line line01"></span>
@@ -58,27 +60,35 @@
         <span class="line line03"></span>
       </div>
     </div>
-    <div class="logo"><a href="../index.html">
-        <div class="logob"><img src="../img/logo.png" alt="">
-      </a></div>
-    <div class="logoh"><a href="../index.html"><img src="../img/logoh.png" alt=""></a></div>
+    <div class="nav-container">
+      <div class="logo">
+        <a href="../index.html">
+          <div class="logob">
+            <img src="../img/logo.png" alt="">
+          </div>
+        </a>
+
+        <div class="logoh">
+          <a href="../index.html">
+            <img src="../img/logoh.png" alt="">
+          </a>
+        </div>
+      </div>
+
+      <ul>
+        <li>
+          <a href="../index.html">WORK</a>
+        </li>
+        <li>
+          <a href="../about.html">ABOUT</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1lUHGQyiX7lvrTfYMmxLZ7rvd4I_5A8Ij/view?usp=drive_link"
+            target="_blank">RESUME</a>
+        </li>
+      </ul>
     </div>
-
-    <ul>
-      <li>
-        <a href="https://drive.google.com/file/d/1lUHGQyiX7lvrTfYMmxLZ7rvd4I_5A8Ij/view?usp=drive_link"
-          target="_blank">RESUME</a>
-      </li>
-      <li>
-        <a id="link_about" href="../about.html">ABOUT</a>
-      </li>
-      <li>
-        <a id="link_portfolio" href="../index.html">WORK</a>
-      </li>
-
-    </ul>
   </nav>
-
 </header>
 
 <div class="container">
@@ -314,11 +324,10 @@
           After users achieve the goal, a congratulations message will sent to users to congrats on their success. The
           purpose of this is trying to boost users’ sense of achievement and share their joy.
         </p>
+        <div style="text-align:center; margin: 32px 0;">
+          <img src="goal.png" alt="" style="max-width: 100%; height: auto;">
+        </div>
       </div>
-      <div class="practice" style="margin-top: 0px;">
-        <img src="goal.png" alt="">
-      </div>
-
       <div class="part">
         <strong style="font-size: 20px;">Project System</strong>
         <p>
@@ -329,11 +338,10 @@
           not “budget” because budget may cause people misunderstand if the budget is related to their income or not. To
           avoid this confusion, “limit expense” is applied to make users understand the function clearly.
         </p>
+        <div style="text-align:center; margin: 32px 0;">
+          <img src="project.png" alt="" style="max-width: 100%; height: auto;">
+        </div>
       </div>
-      <div class="learn" style="margin-top: 0px;">
-        <img src="project.png" alt="">
-      </div>
-
       <div class="part">
         <strong style="font-size: 20px;">Main Page</strong>
         <p>
@@ -343,11 +351,10 @@
           of daily budget will be sent. Moreover, on-going goals and projects will be show in the main page as well. In
           order to let users record their expense easily and swiftly, a fixed button is provide as a shortcut to record.
         </p>
+        <div style="text-align:center; margin: 32px 0;">
+          <img src="mainpage.png" alt="" style="max-width: 100%; height: auto;">
+        </div>
       </div>
-      <div class="practice" style="margin-top: 0px;">
-        <img src="mainpage.png" alt="">
-      </div>
-
     </div>
 
     <div class="section">
@@ -384,10 +391,17 @@
 </div>
 
 
-<div class=" next">
-  <a href="../figma/figma.html" style="font-size: 16px; float:left; margin-left: 30px;">
-    < Previous Project</a>
-      <a href="../ethos/ethos.html" style="font-size: 16px; float: right; margin-right: 30px;">Next Project ></a>
+<div class="next">
+  <a href="../figma/figma.html" class="nav-card">
+    <img src="../img/figma_cover.png" alt="Figma free files" class="nav-image">
+    <span class="nav-direction">< Previous Project</span>
+    <h3 class="nav-title">Figma free files</h3>
+  </a>
+  <a href="../ethos/ethos.html" class="nav-card">
+    <img src="../img/ethos.png" alt="Ethos" class="nav-image">
+    <span class="nav-direction">Next Project ></span>
+    <h3 class="nav-title">Ethos</h3>
+  </a>
 </div>
 
 

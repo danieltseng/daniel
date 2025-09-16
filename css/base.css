@@ -1,0 +1,606 @@
+/* ===========================================
+   BASE STYLES - 所有頁面共用樣式
+   =========================================== */
+
+/* 基礎設定 */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.95) 0%, 
+    rgba(246, 245, 241, 0.98) 25%, 
+    rgba(240, 238, 235, 0.95) 50%, 
+    rgba(246, 245, 241, 0.98) 75%, 
+    rgba(255, 255, 255, 0.95) 100%
+  );
+  background-attachment: fixed;
+  /* 移除backdrop-filter以避免创建新的堆叠上下文 */
+  /* backdrop-filter: blur(0.5px); */
+  /* -webkit-backdrop-filter: blur(0.5px); */
+  padding-top: 104px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/* ===========================================
+   LOGO 樣式
+   =========================================== */
+.logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 32px;
+}
+
+.logoh {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 32px;
+}
+
+.logob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 32px;
+}
+
+div.logo:hover .logoh {
+  opacity: 1;
+}
+
+div.logo:hover .logob {
+  opacity: 0;
+}
+
+/* ===========================================
+   HEADER 樣式 - Apple Liquid Glass 效果
+   =========================================== */
+
+/* CSS变量定义 */
+:root {
+  --header-bg-color: rgba(255, 255, 255, 0.6); /* 60%透明度白色 */
+  --header-border-color: transparent; /* 无边框 */
+  --header-blur-amount: blur(8px); /* 8px模糊 */
+  --header-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* 轻微阴影 */
+  --header-border-radius: 32px;
+  --header-height: 64px;
+  --header-max-width: 1080px;
+  --header-z-index: 9999;
+}
+
+/* 主要header样式 - 使用高特异性选择器避免!important */
+html body header nav.nav-top,
+html body nav.nav-top,
+body header .nav-top,
+body .nav-top {
+  background: var(--header-bg-color);
+  backdrop-filter: var(--header-blur-amount);
+  -webkit-backdrop-filter: var(--header-blur-amount);
+  border: 1px solid var(--header-border-color);
+  border-radius: var(--header-border-radius);
+  box-shadow: var(--header-shadow);
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: var(--header-z-index);
+  height: var(--header-height);
+  width: var(--header-max-width);
+  max-width: calc(100vw - 40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
+              visibility 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0;
+  padding: 0;
+}
+
+/* 滚动时隐藏header - 使用高特异性选择器 */
+html body header nav.nav-top.hidden,
+html body nav.nav-top.hidden,
+body header .nav-top.hidden,
+body .nav-top.hidden {
+  transform: translateX(-50%) translateY(-100px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.nav-container {
+  max-width: 1080px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* ===========================================
+   NAVIGATION 導航樣式
+   =========================================== */
+header span.menu {
+  display: none;
+  font-size: 2em;
+  position: absolute;
+  padding: 0 15px;
+  border-radius: 4px;
+  top: 0px;
+  right: 10px;
+  z-index: 2;
+}
+
+header img, .nav-top img {
+  width: auto;
+  height: 32px;
+  z-index: 1001;
+  border-radius: 0; /* 移除logo圆角 */
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: auto;
+}
+
+li {
+  margin-right: 8px;
+  margin-top: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+/* 导航链接样式 - 使用高特异性选择器 */
+html body header nav.nav-top li a,
+html body nav.nav-top li a,
+body header .nav-top li a,
+body .nav-top li a {
+  color: #666666;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* 导航链接hover状态 */
+html body header nav.nav-top li a:hover,
+html body nav.nav-top li a:hover,
+body header .nav-top li a:hover,
+body .nav-top li a:hover {
+  color: #323A3B;
+  background-color: rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  border-radius: 32px;
+}
+
+/* 当前页面高亮效果 */
+html body header nav.nav-top li a.active,
+html body nav.nav-top li a.active,
+body header .nav-top li a.active,
+body .nav-top li a.active {
+  background-color: #323A3B; /* 不透明深灰色背景 */
+  color: #ffffff; /* 白色文字 */
+  border-radius: 32px;
+}
+
+/* ===========================================
+   FOOTER 樣式
+   =========================================== */
+.footer {
+  clear: both;
+  text-align: center;
+  color: #797979;
+  font-family: 'Raleway', sans-serif;
+  padding: 30px 0 30px 0px;
+}
+
+.footer a {
+  color: #C9C9C9;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+}
+
+.footer img:hover {
+  transform: translate(0px, -3px);
+}
+
+.footer img {
+  border-radius: 0; /* 移除社交媒体图标圆角 */
+}
+
+/* ===========================================
+   項目導航卡片樣式
+   =========================================== */
+.next {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 80px auto 40px auto;
+  max-width: 1080px;
+  padding: 0 20px;
+}
+
+/* 單個卡片居中顯示 */
+.next-single {
+  justify-content: center;
+}
+
+.next-single .nav-card {
+  max-width: 400px;
+}
+
+.nav-card {
+  flex: 1;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(224, 224, 224, 0.6);
+  border-radius: 12px;
+  padding: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.nav-card:hover {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(153, 153, 153, 0.8);
+  text-decoration: none;
+}
+
+.nav-card:hover .nav-image {
+  transform: rotate(8deg) !important;
+}
+
+.nav-card.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.nav-card.disabled:hover {
+  transform: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-color: #E0E0E0;
+}
+
+.nav-card .nav-direction {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #323A3B;
+  margin-bottom: 8px;
+  display: block;
+  position: relative;
+  z-index: 2;
+  margin-right: 60px;
+}
+
+.nav-card .nav-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #323A3B;
+  line-height: 1.4;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  margin-right: 60px;
+}
+
+/* 導航卡片中的圖片樣式 */
+.nav-card .nav-image {
+  position: absolute !important;
+  right: 10px !important;
+  bottom: -20px !important;
+  top: auto !important;
+  transform: rotate(12deg) !important;
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover;
+  border-radius: 4px;
+  z-index: 1;
+  margin: 0 !important;
+  transition: transform 0.3s ease;
+}
+
+/* 響應式設計 */
+@media screen and (max-width: 767px) {
+  .nav-top {
+    position: fixed !important;
+    top: 10px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: calc(100vw - 20px) !important;
+    max-width: none !important;
+    border-radius: 32px !important;
+  }
+  
+  body {
+    padding-top: 94px;
+  }
+  
+  .nav-container {
+    padding: 0 15px;
+  }
+  
+  .next {
+    flex-direction: column;
+    gap: 15px;
+    margin: 60px auto 30px auto;
+    padding: 0 15px;
+  }
+  
+  .nav-card {
+    max-width: none;
+    padding: 16px;
+  }
+  
+  .nav-card .nav-direction {
+    font-size: 13px;
+  }
+  
+  .nav-card .nav-title {
+    font-size: 15px;
+  }
+  
+  .nav-card .nav-image {
+    width: 80px !important;
+    height: 60px !important;
+    right: 8px !important;
+    bottom: -15px !important;
+    top: auto !important;
+  }
+  
+  .nav-card .nav-direction {
+    margin-right: 40px;
+  }
+  
+  .nav-card .nav-title {
+    margin-right: 40px;
+  }
+}
+
+/* 強制所有h4靠左對齊 */
+h4 {
+  text-align: left !important;
+}
+
+/* ===========================================
+   RESPONSIVE 響應式設計
+   =========================================== */
+
+/* 移动端CSS变量 */
+:root {
+  --mobile-menu-bg: #F6F5F1;
+  --mobile-menu-border: rgba(0, 0, 0, 0.1);
+  --mobile-menu-radius: 32px;
+  --mobile-menu-z-index: 9998;
+  --mobile-menu-shadow: 0 4px 16px rgba(0, 0, 0, 0.08); /* 轻微阴影 */
+}
+
+@media screen and (max-width: 767px) {
+  
+  /* 響應式下拉菜单 - 使用高特异性选择器 */
+  html body header nav.nav-top ul,
+  html body nav.nav-top ul,
+  body header .nav-top ul,
+  body .nav-top ul {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: auto;
+    width: 50%;
+    display: none;
+    background: var(--mobile-menu-bg);
+    backdrop-filter: var(--header-blur-amount);
+    -webkit-backdrop-filter: var(--header-blur-amount);
+    border: 1px solid var(--mobile-menu-border);
+    border-radius: var(--mobile-menu-radius);
+    box-shadow: var(--mobile-menu-shadow);
+    padding: 20px 0;
+    margin-top: 10px;
+    z-index: var(--mobile-menu-z-index);
+    text-align: center;
+  }
+
+  .nav-top li {
+    text-align: center;
+    margin-bottom: 5px;
+    float: none;
+    padding: 8px 20px;
+    display: block;
+  }
+  
+  .nav-top li:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* 移动端链接样式 - 使用高特异性选择器 */
+  html body header nav.nav-top li a,
+  html body nav.nav-top li a,
+  body header .nav-top li a,
+  body .nav-top li a {
+    display: inline-block;
+    min-width: 120px;
+    text-align: center;
+    padding: 12px 24px;
+    border-radius: 32px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    margin: 0 auto;
+  }
+  
+  /* 移动端链接hover状态 - 与电脑版一致 */
+  html body header nav.nav-top li a:hover,
+  html body nav.nav-top li a:hover,
+  body header .nav-top li a:hover,
+  body .nav-top li a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #323A3B;
+    text-decoration: none;
+    border-radius: 32px;
+  }
+  
+  /* 移动端链接active状态 - 与电脑版一致 */
+  html body header nav.nav-top li a.active,
+  html body nav.nav-top li a.active,
+  body header .nav-top li a.active,
+  body .nav-top li a.active {
+    background-color: #323A3B; /* 不透明深灰色背景 */
+    color: #ffffff; /* 白色文字 */
+    border-radius: 32px;
+  }
+
+  /* 汉堡菜单展开状态 - 使用高特异性选择器 */
+  html body header nav.nav-top ul.nav-bg,
+  html body nav.nav-top ul.nav-bg,
+  body header .nav-top ul.nav-bg,
+  body .nav-top ul.nav-bg {
+    display: block;
+  }
+
+  /* 漢堡選單 */
+  #wrapper {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10000 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-item {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 10001 !important;
+    opacity: 1;
+  }
+
+  .line {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #323A3B;
+    border-radius: 10px;
+    transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
+    z-index: 10002 !important;
+  }
+
+  .line01 {
+    top: 19%;
+  }
+
+  .line02 {
+    top: 49%;
+  }
+
+  .line03 {
+    top: 79%;
+  }
+
+  .menu.close .line01 {
+    transform: rotate(45deg);
+    top: 49%;
+  }
+
+  .menu.close .line02, .menu.close .line03 {
+    transform: rotate(-45deg);
+    top: 49%;
+  }
+
+  /* 響應式佈局 */
+  .intro {
+    width: 88%;
+  }
+
+  .practice {
+    clear: both;
+    width: 100%;
+    text-align: left;
+  }
+
+  .learn {
+    clear: both;
+    width: 100%;
+    text-align: left;
+  }
+
+  .icon {
+    clear: both;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .function_map img {
+    height: 150px;
+  }
+}
+
+
+/* 移动端header微调 */
+@media (max-width: 767px) {
+  html body header nav.nav-top,
+  html body nav.nav-top,
+  body header .nav-top,
+  body .nav-top {
+    top: 10px;
+    width: calc(100vw - 20px);
+    max-width: none;
+  }
+  
+  body {
+    padding-top: 94px;
+  }
+}
+
+/* 超高优先级 - 强制展开菜单32px圆角 */
+@media screen and (max-width: 767px) {
+  html body header nav.nav-top ul,
+  html body nav.nav-top ul,
+  body header .nav-top ul,
+  body .nav-top ul,
+  .nav-top ul.nav-bg,
+  nav.nav-top ul.nav-bg,
+  header nav.nav-top ul.nav-bg {
+    border-radius: 32px !important;
+    background: #F6F5F1 !important;
+    backdrop-filter: var(--header-blur-amount) !important;
+    -webkit-backdrop-filter: var(--header-blur-amount) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08) !important; /* 轻微阴影 */
+    width: 50% !important;
+    right: 0 !important;
+    left: auto !important;
+  }
+} 

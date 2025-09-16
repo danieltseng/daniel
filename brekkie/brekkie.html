@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href='http://fonts.googleapis.com/css?family=Raleway:100|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
   <link rel="stylesheet" href="brekkie.css">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -48,7 +50,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 <header>
-  <nav class="nav-top fixed-top">
+  <nav class="nav-top">
     <div id="wrapper">
       <div class="main-item menu">
         <span class="line line01"></span>
@@ -56,27 +58,35 @@
         <span class="line line03"></span>
       </div>
     </div>
-    <div class="logo"><a href="../index.html">
-        <div class="logob"><img src="../img/logo.png" alt="">
-      </a></div>
-    <div class="logoh"><a href="../index.html"><img src="../img/logoh.png" alt=""></a></div>
+    <div class="nav-container">
+      <div class="logo">
+        <a href="../index.html">
+          <div class="logob">
+            <img src="../img/logo.png" alt="">
+          </div>
+        </a>
+
+        <div class="logoh">
+          <a href="../index.html">
+            <img src="../img/logoh.png" alt="">
+          </a>
+        </div>
+      </div>
+
+      <ul>
+        <li>
+          <a href="../index.html">WORK</a>
+        </li>
+        <li>
+          <a href="../about.html">ABOUT</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1lUHGQyiX7lvrTfYMmxLZ7rvd4I_5A8Ij/view?usp=drive_link"
+            target="_blank">RESUME</a>
+        </li>
+      </ul>
     </div>
-
-    <ul>
-      <li>
-        <a href="https://drive.google.com/file/d/1lUHGQyiX7lvrTfYMmxLZ7rvd4I_5A8Ij/view?usp=drive_link"
-          target="_blank">RESUME</a>
-      </li>
-      <li>
-        <a id="link_about" href="../about.html">ABOUT</a>
-      </li>
-      <li>
-        <a id="link_portfolio" href="../index.html">WORK</a>
-      </li>
-
-    </ul>
   </nav>
-
 </header>
 
 <div class="container">
@@ -288,8 +298,12 @@
 
 </div>
 
-<div class=" next">
-  <a href="../telecom/telecom.html" style="font-size: 16px; float: right; margin-right: 30px;">Next Project ></a>
+<div class="next next-single">
+  <a href="../telecom/telecom.html" class="nav-card">
+    <img src="../img/telecom.png" alt="Telecom Application and E-commerce Merger Project" class="nav-image">
+    <span class="nav-direction">Next Project ></span>
+    <h3 class="nav-title">Telecom Application and E-commerce Merger Project</h3>
+  </a>
 </div>
 
 

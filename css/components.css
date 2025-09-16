@@ -1,0 +1,239 @@
+/* ===========================================
+   COMPONENTS - 可重用組件樣式
+   =========================================== */
+
+/* ===========================================
+   按鈕組件
+   =========================================== */
+.view {
+  margin-top: 60px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.view a p {
+  width: 200px;
+  padding: 15px 0;
+  border: 1px solid #5896A3;
+  border-radius: 3px;
+  background-color: transparent;
+  text-align: center;
+  color: #5896A3;
+  margin: 0 auto;
+}
+
+.view p:hover {
+  background-color: #5896A3;
+  color: #fff;
+  transition: all .3s ease-out;
+}
+
+.view a {
+  text-decoration: none;
+}
+
+/* 不同顏色變體 */
+.view.orange a p {
+  border-color: #FEBC71;
+  color: #FEBC71;
+}
+
+.view.orange p:hover {
+  background-color: #FEBC71;
+}
+
+.view.pink a p {
+  border-color: #E92056;
+  color: #E92056;
+}
+
+.view.pink p:hover {
+  background-color: #E92056;
+}
+
+/* ===========================================
+   內容區塊組件
+   =========================================== */
+.mainbg {
+  margin-top: 100px;
+  text-align: center;
+  color: #323A3B;
+}
+
+.mainbg img {
+  width: 76%;
+}
+
+.mytitle {
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+.intro {
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #323A3B;
+  font-family: 'Raleway', sans-serif;
+}
+
+.intro h2 {
+  color: #5896A3;
+  text-align: left;
+  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.intro p {
+  text-align: left;
+  line-height: 1.8;
+  word-wrap: break-word;
+  font-family: sans-serif;
+}
+
+.section {
+  display: block;
+  margin-bottom: 100px;
+}
+
+.section p {
+  font-family: sans-serif;
+  color: #666666;
+}
+
+.section strong {
+  font-family: sans-serif;
+  color: #333333;
+}
+
+.section img {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.overview {
+  margin-top: 100px;
+}
+
+/* ===========================================
+   佈局組件
+   =========================================== */
+.practice {
+  margin-top: 30px;
+  margin-left: 3%;
+  margin-right: 3%;
+  display: block;
+  width: 44%;
+  float: left;
+}
+
+.learn {
+  margin-top: 30px;
+  margin-left: 3%;
+  margin-right: 3%;
+  display: block;
+  width: 44%;
+  float: left;
+}
+
+.icon {
+  margin-top: 30px;
+  margin-left: 3%;
+  margin-right: 3%;
+  display: block;
+  width: 27%;
+  float: left;
+}
+
+.mockup {
+  display: block;
+  clear: both;
+}
+
+.mockup img {
+  margin: 0;
+}
+
+/* ===========================================
+   標題樣式
+   =========================================== */
+h1 {
+  margin-top: 30px;
+  font-family: 'Hammersmith One', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* 不同項目的標題顏色 */
+h1.project-brekkie {
+  color: #3E7A61;
+}
+
+h1.project-budit {
+  color: #75A5B0;
+}
+
+h1.project-figma {
+  color: #5896A3;
+}
+
+h1.project-knock {
+  color: #FEBC71;
+}
+
+h1.project-telecom {
+  color: #666666;
+}
+
+h1.project-ethos {
+  color: #323A3B;
+}
+
+h1.about {
+  color: #5896A3;
+}
+
+/* ===========================================
+   響應式組件調整
+   =========================================== */
+@media screen and (max-width: 767px) {
+  .intro {
+    width: 88%;
+  }
+
+  .practice {
+    clear: both;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .learn {
+    clear: both;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .learn img {
+    width: 100%;
+  }
+
+  .icon {
+    clear: both;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+} 
