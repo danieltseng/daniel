@@ -4,19 +4,50 @@ $(document).ready(function(){
     $('.animated-icon1,.animated-icon3,.animated-icon4').click(function(){
         $(this).toggleClass('open');
     });
-    if(location.pathname.slice(-10) == 'index.html'){
-      $('#link_portfolio').css('color','#323A3B');
-    }else{
-      $('#link_portfolio').css('color','#ADADAD');
-    }
-    if(location.pathname.slice(-10) == 'about.html'){
-      $('#link_about').css('color','#323A3B');
-    }else{
-      $('#link_about').css('color','#ADADAD');
-    }
+    // 移除过时的颜色设置逻辑，使用CSS的.active类来处理
+    // 所有链接颜色现在统一由CSS管理
   console.log('pathname = ' + location.pathname.slice(-10));
     
 });
+
+  // Header scroll behavior - hide/show on scroll (DISABLED)
+  // let lastScrollTop = 0;
+
+  // function updateHeader() {
+  //   const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  //   const header = document.querySelector('.nav-top');
+    
+  //   if (!header) {
+  //     console.log('Header not found');
+  //     return;
+  //   }
+    
+  //   console.log('Scroll:', currentScrollTop, 'Last:', lastScrollTop);
+    
+  //   // 如果滚动距离小于100px，总是显示header
+  //   if (currentScrollTop < 100) {
+  //     header.classList.remove('hidden');
+  //     console.log('Header shown (top area)');
+  //     lastScrollTop = currentScrollTop;
+  //     return;
+  //   }
+    
+  //   // 向下滚动时隐藏header
+  //   if (currentScrollTop > lastScrollTop && currentScrollTop > 100) {
+  //     header.classList.add('hidden');
+  //     console.log('Header hidden, scroll:', currentScrollTop);
+  //   } 
+  //   // 向上滚动时显示header
+  //   else if (currentScrollTop < lastScrollTop) {
+  //     header.classList.remove('hidden');
+  //     console.log('Header shown, scroll:', currentScrollTop);
+  //   }
+    
+  //   lastScrollTop = currentScrollTop;
+  // }
+
+  // 监听滚动事件 - 简化版本 (DISABLED)
+  // window.addEventListener('scroll', updateHeader, { passive: true });
 
 // $(".nav-top .menu #wrapper").click(function() {
 //     var $ul = $(this).parent("nav").children("ul");
@@ -33,14 +64,19 @@ $(document).ready(function(){
 // 	}); // end click event handler
 
   $("#wrapper").click( function() {
+    console.log('Hamburger menu clicked');
 	$(".menu").toggleClass("close");
-  var $ul = $(this).parent("nav").children("ul");
+  var $ul = $(this).parent("nav").find("ul");
+  console.log('Found ul:', $ul.length);
+  
   // if section is already active and clicked again
   if ( $ul.hasClass("nav-bg") ) {
+    console.log('Closing menu');
     $ul.removeClass("nav-bg");
     $ul.slideUp();
   } else {
   // if section is made active
+    console.log('Opening menu');
     $ul.addClass("nav-bg");
     $ul.slideDown();
     return false;
