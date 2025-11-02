@@ -1,0 +1,45 @@
+/* ===========================================
+   AI PLATFORM PROJECT SPECIFIC STYLES - AI Platform項目專用樣式
+   =========================================== */
+
+/* AI Platform項目特定容器設定 */
+.container {
+  padding: 0 !important;
+  max-width: 1880px;
+  margin-top: 0px;
+}
+
+.topHeader {
+  background-color: #4A90E2;
+}
+
+/* AI Platform項目標題顏色 */
+h1 {
+  color: #2C5F8D;
+}
+
+/* AI Platform項目特定佈局 */
+.user_research {
+  display: inline-block;
+}
+
+.part {
+  margin-top: 50px;
+  text-align: left;
+}
+
+/* AI Platform項目圖片圓角 */
+img {
+  border-radius: 24px;
+}
+
+/* AI Platform項目按鈕樣式覆蓋 */
+.view a p {
+  border-color: #4A90E2;
+  color: #4A90E2;
+}
+
+.view p:hover {
+  background-color: #4A90E2;
+}
+

@@ -19,25 +19,44 @@
    首頁介紹區塊
    =========================================== */
 .intro {
-  text-align: center;
+  text-align: left;
   color: #323A3B;
-  padding-top: 35vh;
-  height: 80vh;
+  padding-top: 20vh;
+  height: 72vh;
+  width: 90%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-/* 首頁特定：intro標題顏色與置中修正 */
+/* 首頁特定：intro標題顏色與置左對齊 */
 .intro h2 {
   color: #323A3B;
-  text-align: center;
+  text-align: left;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
+
+/* 首頁特定：intro說明文字 */
+.intro-description {
+  color: #323A3B;
+  text-align: left;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 0;
+}
+
 /* 只保留 .typer2 藍色，span 不再全藍 */
 .typer2 {
   color: #5896A3 !important;
 }
 
-/* 首頁特定：intro說明文字置中 */
+/* 首頁特定：intro說明文字置左 */
 .intro > p {
-  text-align: center;
+  text-align: left;
 }
 
 /* ===========================================
@@ -107,6 +126,21 @@
   
   .small {
     display: block;
+  }
+  
+  .intro {
+    padding-top: 10vh;
+    width: 88%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .intro h2 {
+    font-size: 24px;
+  }
+  
+  .intro-description {
+    font-size: 32px;
   }
 }
 
