@@ -603,4 +603,25 @@ h4 {
     right: 0 !important;
     left: auto !important;
   }
-} 
+}
+/* Accessible navigation controls; layout remains shared across all pages. */
+#wrapper {
+  display: none;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+}
+a:focus-visible, button:focus-visible {
+  outline: 3px solid #3e7a87;
+  outline-offset: 4px;
+}
+@media screen and (max-width: 767px) {
+  #wrapper { display: flex; }
+  html body header nav.nav-top ul {
+    width: min(240px, calc(100vw - 40px)) !important;
+  }
+}
+/* Preserve intrinsic image ratios when HTML dimensions reserve loading space. */
+img[width][height] { height: auto; }
+header img[width][height], .nav-top img[width][height] { height: 32px; }

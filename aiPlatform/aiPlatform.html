@@ -29,9 +29,9 @@
     crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Raleway" rel="stylesheet">
   <script src="../js/jquery.js"></script>
-  <script src="../js/main.js"></script>
   <link rel="shortcut icon" href="../img/favicon.ico" />
   <link rel="bookmark" href="../img/favicon.ico" />
+  <script src="../js/main.js" defer></script>
 </head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116540958-1"></script>
@@ -51,29 +51,29 @@
         <![endif]-->
 <header>
   <nav class="nav-top">
-    <div id="wrapper">
-      <div class="main-item menu">
+    <button id="wrapper" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation">
+      <span class="main-item menu" aria-hidden="true">
         <span class="line line01"></span>
         <span class="line line02"></span>
         <span class="line line03"></span>
-      </div>
-    </div>
+      </span>
+    </button>
     <div class="nav-container">
       <div class="logo">
         <a href="../index.html">
           <div class="logob">
-            <img src="../img/logo.png" alt="">
+            <img src="../img/logo.png" alt="Daniel Tseng — home" width="148" height="128" loading="eager" decoding="async">
           </div>
         </a>
 
         <div class="logoh">
           <a href="../index.html">
-            <img src="../img/logoh.png" alt="">
+            <img src="../img/logoh.png" alt="Daniel Tseng — home" width="140" height="120" loading="eager" decoding="async">
           </a>
         </div>
       </div>
 
-      <ul>
+      <ul id="site-navigation">
         <li>
           <a href="../index.html">WORK</a>
         </li>
@@ -91,7 +91,7 @@
 
 <div class="container">
   <div class="mainbg">
-    <img src="mainbg.png" alt="">
+    <img src="mainbg.png" alt="" width="2400" height="1200" loading="eager" decoding="async">
   </div>
   <div class="intro">
 
@@ -171,7 +171,7 @@
         <br>
         My thinking is that the primary functions used by this platform's users will revolve around chats. Compared to switching between different functions, the ability to switch between different chat histories may be a more necessary feature. Therefore, I chose the sidebar menu.
       </p>
-      <img src="menu.png" alt="">
+      <img src="menu.png" alt="" width="1600" height="1000" loading="lazy" decoding="async">
     </div>
 
     <div class="section">
@@ -187,7 +187,7 @@
       <p>
         For example, we can turn the product category within the predefined Prompt into a fill-in-the-blank field. Users would only need to complete the product type they are searching for to easily complete the Prompt.
       </p>
-      <img src="homepage.png" alt="">
+      <img src="homepage.png" alt="" width="1600" height="1000" loading="lazy" decoding="async">
 
       <h4>Chat flow</h4>
       <p>
@@ -198,15 +198,15 @@
         <br>
         <strong>Current Status:</strong> We divide the AI's status into three types. Thinking, Generating, and Searching. Displaying these statuses lets users know exactly what the AI is currently doing.
       </p>
-      <img src="status.png" alt="">
+      <img src="status.png" alt="" width="1600" height="1000" loading="lazy" decoding="async">
       <p>
         <strong>Trust:</strong> The user's trust in the AI correlates with how much they understand what the AI has done. The lack of trust partly stems from not understanding the AI's actions. Therefore, during the AI search process, we will list all the actions it performs, allowing the user to understand.
       </p>
-      <img src="trust.png" alt="">
+      <img src="trust.png" alt="" width="1600" height="1000" loading="lazy" decoding="async">
       <p>
         <strong>Follow-up:</strong> After every AI response, suggested follow-up actions will be generated to guide the user on what to do next. This helps users who are unfamiliar with the AI system to use it easily.
       </p>
-      <img src="followup.png" alt="">
+      <img src="followup.png" alt="" width="1600" height="1000" loading="lazy" decoding="async">
 
       <h4>Search Results</h4>
       <p>
@@ -215,7 +215,7 @@
       <p>
         Most of the time, the user's line of sight moves from left to right. Therefore, the main needs or dialogue content will start on the left. Although this platform aims to help clients find products or suppliers, the primary task at the beginning is still dialogue, followed by the search results area on the right.
       </p>
-      <img src="result.png" alt="">
+      <img src="result.png" alt="" width="1600" height="1000" loading="lazy" decoding="async">
 
       <h4>Ask AI</h4>
       <p>
@@ -224,7 +224,7 @@
       <p>
         We provide an "Ask AI" function that allows the user to incorporate a product or supplier into the dialogue context, and then ask the AI specific questions they have, or ask the AI to compare products or suppliers to distinguish the differences between various goods and vendors.
       </p>
-      <img src="ask.png" alt="">
+      <img src="ask.png" alt="" width="1600" height="1000" loading="lazy" decoding="async">
       
     </div>
 
@@ -235,7 +235,7 @@
 
 <div class="next next-single">
   <a href="../brekkie/brekkie.html" class="nav-card">
-    <img src="../img/brekkie.png" alt="Breakfast shop ordering system" class="nav-image">
+    <img src="../img/brekkie.png" alt="Breakfast shop ordering system" class="nav-image" width="1600" height="1200" loading="lazy" decoding="async">
     <span class="nav-direction">Next Project ></span>
     <h3 class="nav-title">Breakfast shop ordering system</h3>
   </a>
@@ -248,12 +248,12 @@
 
 <div class="footer">
   <div class="raw" style="margin-top: 80px; margin-bottom: 20px;">
-    <a href="mailto:danieltseng8612@gmail.com"><img src="../img/email.png" alt=""
-        style="width:20px; margin-left: 10px; margin-right: 10px;"></a>
-    <a href="https://www.linkedin.com/in/daniel-tseng/" target="_blank"><img src="../img/linkedin.png" alt=""
-        style="width:20px; margin-left: 10px; margin-right: 10px;"></a>
-    <a href="https://dribbble.com/danielt8612" target="_blank"><img src="../img/dribbble.png" alt=""
-        style="width:20px; margin-left: 10px; margin-right: 10px;"></a>
+    <a href="mailto:danieltseng8612@gmail.com"><img src="../img/email.png" alt="Email Daniel"
+        style="width:20px; margin-left: 10px; margin-right: 10px;" width="256" height="192" loading="lazy" decoding="async"></a>
+    <a href="https://www.linkedin.com/in/daniel-tseng/" target="_blank"><img src="../img/linkedin.png" alt="Daniel on LinkedIn"
+        style="width:20px; margin-left: 10px; margin-right: 10px;" width="256" height="256" loading="lazy" decoding="async"></a>
+    <a href="https://dribbble.com/danielt8612" target="_blank"><img src="../img/dribbble.png" alt="Daniel on Dribbble"
+        style="width:20px; margin-left: 10px; margin-right: 10px;" width="256" height="256" loading="lazy" decoding="async"></a>
   </div>
 
   <div class="raw">
@@ -266,16 +266,6 @@
 
 
 </div><!-- container -->
-
-
-
-
-
-
-
-
-
-<script src="../js/main.js"></script>
 </body>
 
 </html>
