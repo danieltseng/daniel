@@ -23,17 +23,16 @@
   <link href='https://fonts.googleapis.com/css?family=Raleway:100|Open+Sans:400,300' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Hammersmith+One|Raleway" rel="stylesheet">
   <!-- script -->
-  <script src="https://cdn.jsdelivr.net/npm/theaterjs@latest/dist/theater.min.js"></script>
   <script src="js/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
 
   <!-- icon -->
   <link rel="shortcut icon" href="img/favicon.ico" />
   <link rel="bookmark" href="img/favicon.ico" />
+  <script src="js/main.js" defer></script>
 </head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116540958-1"></script>
@@ -54,29 +53,29 @@
         <![endif]-->
   <header>
     <nav class="nav-top" style="background: rgba(255, 255, 255, 0.6) !important; backdrop-filter: blur(8px) !important; -webkit-backdrop-filter: blur(8px) !important; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;">
-      <div id="wrapper">
-        <div class="main-item menu">
+      <button id="wrapper" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation">
+        <span class="main-item menu" aria-hidden="true">
           <span class="line line01"></span>
           <span class="line line02"></span>
           <span class="line line03"></span>
-        </div>
-      </div>
+        </span>
+    </button>
       <div class="nav-container">
         <div class="logo">
           <a href="#">
             <div class="logob">
-              <img src="img/logo.png" alt="">
+              <img src="img/logo.png" alt="Daniel Tseng — home" width="148" height="128" loading="eager" decoding="async">
             </div>
           </a>
 
           <div class="logoh">
             <a href="#">
-              <img src="img/logoh.png" alt="">
+              <img src="img/logoh.png" alt="Daniel Tseng — home" width="140" height="120" loading="eager" decoding="async">
             </a>
           </div>
         </div>
 
-        <ul>
+        <ul id="site-navigation">
           <li>
             <a id="link_portfolio" href="./index.html" class="active">WORK</a>
           </li>
@@ -106,7 +105,7 @@
       <div class="row justify-content-center">
         <div class="projects col-lg-5 col-md-5 col-xs-12">
           <a href="aiPlatform/aiPlatform.html" class="sc">
-            <img src="img/aiPlatform.png" alt="" class="image">
+            <img src="img/aiPlatform-cover.jpg" alt="" class="image" width="1000" height="750" loading="lazy" decoding="async">
             <div class="title">
               <h3>AI Platform for International Buyers</h3>
             </div>
@@ -116,7 +115,7 @@
       
         <div class="projects col-lg-5 col-md-5 col-xs-12">
           <a href="brekkie/brekkie.html" class="sc">
-            <img src="img/brekkie.png" alt="" class="image">
+            <img src="img/brekkie-cover.jpg" alt="" class="image" width="1000" height="750" loading="lazy" decoding="async">
             <div class="title">
               <h3>Breakfast shop ordering system</h3>
             </div>
@@ -130,7 +129,7 @@
 
         <div class="projects col-lg-5 col-md-5 col-xs-12">
           <a href="telecom/telecom.html" class="sc">
-            <img src="img/telecom.png" alt="" class="image">
+            <img src="img/telecom-cover.jpg" alt="" class="image" width="1000" height="750" loading="lazy" decoding="async">
             <div class="title">
               <h3>Telecom Application and E-commerce Merger Project </h3>
             </div>
@@ -141,7 +140,7 @@
 
         <div class="projects col-lg-5 col-md-5 col-xs-12">
           <a href="figma/figma.html" class="sc">
-            <img src="img/figma_cover.png" alt="" class="image">
+            <img src="img/figma_cover-cover.jpg" alt="" class="image" width="1000" height="750" loading="lazy" decoding="async">
             <div class="title">
               <h3>Figma free files</h3>
             </div>
@@ -155,7 +154,7 @@
 
         <div class="projects col-lg-5 col-md-5 col-xs-12">
           <a href="budit/budit.html" class="sc">
-            <img src="img/budit.png" alt="" class="image">
+            <img src="img/budit-cover.jpg" alt="" class="image" width="1000" height="750" loading="lazy" decoding="async">
             <div class="title">
               <h3>Budit</h3>
             </div>
@@ -165,7 +164,7 @@
 
         <div class="projects col-lg-5 col-md-5 col-xs-12">
           <a href="ethos/ethos.html" class="sc">
-            <img src="img/ethos.png" alt="" class="image">
+            <img src="img/ethos-cover.jpg" alt="" class="image" width="1000" height="750" loading="lazy" decoding="async">
             <div class="title">
               <h3>Ethos</h3>
             </div>
@@ -182,12 +181,12 @@
 
     <div class="footer">
       <div class="raw" style="margin-bottom: 20px;">
-        <a href="mailto:danieltseng8612@gmail.com"><img src="img/email.png" alt=""
-            style="width:20px; margin-left: 10px; margin-right: 10px;"></a>
-        <a href="https://www.linkedin.com/in/daniel-tseng/" target="_blank"><img src="img/linkedin.png" alt=""
-            style="width:20px; margin-left: 10px; margin-right: 10px;"></a>
-        <a href="https://dribbble.com/danielt8612" target="_blank"><img src="img/dribbble.png" alt=""
-            style="width:20px; margin-left: 10px; margin-right: 10px;"></a>
+        <a href="mailto:danieltseng8612@gmail.com"><img src="img/email.png" alt="Email Daniel"
+            style="width:20px; margin-left: 10px; margin-right: 10px;" width="256" height="192" loading="lazy" decoding="async"></a>
+        <a href="https://www.linkedin.com/in/daniel-tseng/" target="_blank"><img src="img/linkedin.png" alt="Daniel on LinkedIn"
+            style="width:20px; margin-left: 10px; margin-right: 10px;" width="256" height="256" loading="lazy" decoding="async"></a>
+        <a href="https://dribbble.com/danielt8612" target="_blank"><img src="img/dribbble.png" alt="Daniel on Dribbble"
+            style="width:20px; margin-left: 10px; margin-right: 10px;" width="256" height="256" loading="lazy" decoding="async"></a>
       </div>
 
       <div class="raw">
@@ -201,14 +200,6 @@
 
   </div>
   <!-- container -->
-
-
-
-
-
-
-
-  <script src="js/main.js"></script>
 
 </body>
 

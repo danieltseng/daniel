@@ -23,17 +23,16 @@
   <link href='https://fonts.googleapis.com/css?family=Raleway:100|Open+Sans:400,300' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Hammersmith+One|Raleway" rel="stylesheet">
   <!-- script -->
-  <script src="https://cdn.jsdelivr.net/npm/theaterjs@latest/dist/theater.min.js"></script>
   <script src="../js/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <script src="../js/main.js"></script>
 
   <!-- icon -->
   <link rel="shortcut icon" href="../img/favicon.ico" />
   <link rel="bookmark" href="../img/favicon.ico" />
+  <script src="../js/main.js" defer></script>
 </head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116540958-1"></script>
@@ -53,29 +52,29 @@
         <![endif]-->
 <header>
   <nav class="nav-top">
-    <div id="wrapper">
-      <div class="main-item menu">
+    <button id="wrapper" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation">
+      <span class="main-item menu" aria-hidden="true">
         <span class="line line01"></span>
         <span class="line line02"></span>
         <span class="line line03"></span>
-      </div>
-    </div>
+      </span>
+    </button>
     <div class="nav-container">
       <div class="logo">
         <a href="../index.html">
           <div class="logob">
-            <img src="../img/logo.png" alt="">
+            <img src="../img/logo.png" alt="Daniel Tseng — home" width="148" height="128" loading="eager" decoding="async">
           </div>
         </a>
 
         <div class="logoh">
           <a href="../index.html">
-            <img src="../img/logoh.png" alt="">
+            <img src="../img/logoh.png" alt="Daniel Tseng — home" width="140" height="120" loading="eager" decoding="async">
           </a>
         </div>
       </div>
 
-      <ul>
+      <ul id="site-navigation">
         <li>
           <a href="../index.html">WORK</a>
         </li>
@@ -93,7 +92,7 @@
 
 <div class="container">
   <div class="mainbg">
-    <img src="main.png" alt="">
+    <img src="main.png" alt="" width="3600" height="1500" loading="eager" decoding="async">
   </div>
   <div class="intro">
 
@@ -131,7 +130,7 @@
 
     <div class="section">
       <h2>Process</h2>
-      <img src="process.png" alt="">
+      <img src="process.png" alt="" width="1600" height="1054" loading="lazy" decoding="async">
     </div>
 
     <div class="section">
@@ -156,7 +155,7 @@
           tools and pain points. By designing the questions, I apply the <span style="color:#5896A3;">golden circle
             approach</span> to discover more detail information.
         <p>
-          <img src="question.png" alt="">
+          <img src="question.png" alt="" width="1600" height="1054" loading="lazy" decoding="async">
         <p>
 
           After collected the information, we first do initial coding to reduce and organise with the data for later
@@ -168,7 +167,7 @@
             up tracking their spending</span>.
         </p>
       </div>
-      <img src="coding.png" alt="">
+      <img src="coding.png" alt="" width="1480" height="778" loading="lazy" decoding="async">
       <div class="part">
         <strong style="font-size: 20px;">Competitive Analysis</strong>
         <p>
@@ -201,8 +200,8 @@
         money for new smartphone. The other is a junior engineer who wants to save some salary every month for future
         use.
       </p>
-      <img src="Persona1.png" alt="">
-      <img src="Persona2.png" alt="">
+      <img src="Persona1.png" alt="" width="1000" height="800" loading="lazy" decoding="async">
+      <img src="Persona2.png" alt="" width="1000" height="800" loading="lazy" decoding="async">
     </div>
 
 
@@ -246,7 +245,7 @@
         product. I built several versions to see which would work more logically. Each category in the picture below
         would become a tab in the navigation bar.
       </p>
-      <img src="ia.jpg" alt="">
+      <img src="ia.jpg" alt="" width="3529" height="2647" loading="lazy" decoding="async">
     </div>
 
     <div class="section">
@@ -255,7 +254,7 @@
         Based on the information architecture, I sketched some wireframe to see if the system works. Those wireframes
         would help guide later stage design and interaction.
       </p>
-      <img src="wire.jpg" alt="">
+      <img src="wire.jpg" alt="" width="3857" height="2893" loading="lazy" decoding="async">
     </div>
 
     <div class="section">
@@ -265,7 +264,7 @@
         if the user flow works smoothly. We discuss every page, so that I can do a fast test with my partner and
         discover the design may not be useful.
       </p>
-      <img src="wirepro.png" alt="">
+      <img src="wirepro.png" alt="" width="1214" height="1346" loading="lazy" decoding="async">
     </div>
 
     <div class="section">
@@ -281,7 +280,7 @@
           Our target market is Taiwan, hence, Mandarin and English are both needed for our users.
         </p>
       </div>
-      <img src="typo.png" alt="">
+      <img src="typo.png" alt="" width="1600" height="1200" loading="lazy" decoding="async">
 
       <div class="part">
         <strong style="font-size: 20px;">Colours</strong>
@@ -294,7 +293,7 @@
           users on achieving their goals.
         </p>
       </div>
-      <img src="colours.png" alt="">
+      <img src="colours.png" alt="" width="1600" height="1000" loading="lazy" decoding="async">
 
       <div class="part">
         <strong style="font-size: 20px;">Icon Set</strong>
@@ -305,7 +304,7 @@
           custom category.
         </p>
       </div>
-      <img src="icons.png" alt="">
+      <img src="icons.png" alt="" width="1800" height="1800" loading="lazy" decoding="async">
 
     </div>
 
@@ -325,7 +324,7 @@
           purpose of this is trying to boost users’ sense of achievement and share their joy.
         </p>
         <div style="text-align:center; margin: 32px 0;">
-          <img src="goal.png" alt="" style="max-width: 100%; height: auto;">
+          <img src="goal.png" alt="" style="max-width: 100%; height: auto;" width="2000" height="1000" loading="lazy" decoding="async">
         </div>
       </div>
       <div class="part">
@@ -339,7 +338,7 @@
           avoid this confusion, “limit expense” is applied to make users understand the function clearly.
         </p>
         <div style="text-align:center; margin: 32px 0;">
-          <img src="project.png" alt="" style="max-width: 100%; height: auto;">
+          <img src="project.png" alt="" style="max-width: 100%; height: auto;" width="2000" height="1000" loading="lazy" decoding="async">
         </div>
       </div>
       <div class="part">
@@ -352,7 +351,7 @@
           order to let users record their expense easily and swiftly, a fixed button is provide as a shortcut to record.
         </p>
         <div style="text-align:center; margin: 32px 0;">
-          <img src="mainpage.png" alt="" style="max-width: 100%; height: auto;">
+          <img src="mainpage.png" alt="" style="max-width: 100%; height: auto;" width="2000" height="1000" loading="lazy" decoding="async">
         </div>
       </div>
     </div>
@@ -393,12 +392,12 @@
 
 <div class="next">
   <a href="../figma/figma.html" class="nav-card">
-    <img src="../img/figma_cover.png" alt="Figma free files" class="nav-image">
+    <img src="../img/figma_cover.png" alt="Figma free files" class="nav-image" width="1600" height="1200" loading="lazy" decoding="async">
     <span class="nav-direction">< Previous Project</span>
     <h3 class="nav-title">Figma free files</h3>
   </a>
   <a href="../ethos/ethos.html" class="nav-card">
-    <img src="../img/ethos.png" alt="Ethos" class="nav-image">
+    <img src="../img/ethos.png" alt="Ethos" class="nav-image" width="1600" height="1200" loading="lazy" decoding="async">
     <span class="nav-direction">Next Project ></span>
     <h3 class="nav-title">Ethos</h3>
   </a>
@@ -409,12 +408,12 @@
 
 <div class="footer">
   <div class="raw" style="margin-top: 80px; margin-bottom: 20px;">
-    <a href="mailto:danieltseng8612@gmail.com"><img src="../img/email.png" alt=""
-        style="width:20px; margin-left: 10px; margin-right: 10px;"></a>
-    <a href="https://www.linkedin.com/in/daniel-tseng/" target="_blank"><img src="../img/linkedin.png" alt=""
-        style="width:20px; margin-left: 10px; margin-right: 10px;"></a>
-    <a href="https://dribbble.com/danielt8612" target="_blank"><img src="../img/dribbble.png" alt=""
-        style="width:20px; margin-left: 10px; margin-right: 10px;"></a>
+    <a href="mailto:danieltseng8612@gmail.com"><img src="../img/email.png" alt="Email Daniel"
+        style="width:20px; margin-left: 10px; margin-right: 10px;" width="256" height="192" loading="lazy" decoding="async"></a>
+    <a href="https://www.linkedin.com/in/daniel-tseng/" target="_blank"><img src="../img/linkedin.png" alt="Daniel on LinkedIn"
+        style="width:20px; margin-left: 10px; margin-right: 10px;" width="256" height="256" loading="lazy" decoding="async"></a>
+    <a href="https://dribbble.com/danielt8612" target="_blank"><img src="../img/dribbble.png" alt="Daniel on Dribbble"
+        style="width:20px; margin-left: 10px; margin-right: 10px;" width="256" height="256" loading="lazy" decoding="async"></a>
   </div>
 
   <div class="raw">
@@ -427,15 +426,6 @@
 
 
 </div><!-- container -->
-
-
-
-
-
-
-
-
-<script src="../js/main.js"></script>
 </body>
 
 </html>

@@ -23,17 +23,16 @@
   <link href='https://fonts.googleapis.com/css?family=Raleway:100|Open+Sans:400,300' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Hammersmith+One|Raleway" rel="stylesheet">
   <!-- script -->
-  <script src="https://cdn.jsdelivr.net/npm/theaterjs@latest/dist/theater.min.js"></script>
   <script src="../js/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <script src="../js/main.js"></script>
 
   <!-- icon -->
   <link rel="shortcut icon" href="../img/favicon.ico" />
   <link rel="bookmark" href="../img/favicon.ico" />
+  <script src="../js/main.js" defer></script>
 </head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116540958-1"></script>
@@ -53,29 +52,29 @@
         <![endif]-->
 <header>
   <nav class="nav-top">
-    <div id="wrapper">
-      <div class="main-item menu">
+    <button id="wrapper" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation">
+      <span class="main-item menu" aria-hidden="true">
         <span class="line line01"></span>
         <span class="line line02"></span>
         <span class="line line03"></span>
-      </div>
-    </div>
+      </span>
+    </button>
     <div class="nav-container">
       <div class="logo">
         <a href="../index.html">
           <div class="logob">
-            <img src="../img/logo.png" alt="">
+            <img src="../img/logo.png" alt="Daniel Tseng — home" width="148" height="128" loading="eager" decoding="async">
           </div>
         </a>
 
         <div class="logoh">
           <a href="../index.html">
-            <img src="../img/logoh.png" alt="">
+            <img src="../img/logoh.png" alt="Daniel Tseng — home" width="140" height="120" loading="eager" decoding="async">
           </a>
         </div>
       </div>
 
-      <ul>
+      <ul id="site-navigation">
         <li>
           <a href="../index.html">WORK</a>
         </li>
@@ -93,7 +92,7 @@
 
 <div class="container">
   <div class="mainbg">
-    <img src="main.png" alt="">
+    <img src="main.png" alt="" width="2400" height="1200" loading="eager" decoding="async">
   </div>
   <div class="intro">
 
@@ -121,14 +120,14 @@
     <br>
         It's an icon set that includes both basic and unique icons.
       </p>
-      <img src="icons.png" alt="">
+      <img src="icons.png" alt="" width="1920" height="960" loading="lazy" decoding="async">
 
       <p>
         <strong>Just some personas</strong>
       <br>
         Persona templates that allow others to simply input their data.
       </p>
-      <img src="persona.png" alt="">
+      <img src="persona.png" alt="" width="1920" height="960" loading="lazy" decoding="async">
 
     </div>
 
@@ -147,12 +146,12 @@
 </div>
 <div class="next">
   <a href="../telecom/telecom.html" class="nav-card">
-    <img src="../img/telecom.png" alt="Telecom Application and E-commerce Merger Project" class="nav-image">
+    <img src="../img/telecom.png" alt="Telecom Application and E-commerce Merger Project" class="nav-image" width="1600" height="1200" loading="lazy" decoding="async">
     <span class="nav-direction">< Previous Project</span>
     <h3 class="nav-title">Telecom Application and E-commerce Merger Project</h3>
   </a>
   <a href="../budit/budit.html" class="nav-card">
-    <img src="../img/budit.png" alt="Budit" class="nav-image">
+    <img src="../img/budit.png" alt="Budit" class="nav-image" width="1600" height="1200" loading="lazy" decoding="async">
     <span class="nav-direction">Next Project ></span>
     <h3 class="nav-title">Budit</h3>
   </a>
@@ -163,12 +162,12 @@
 
 <div class="footer">
   <div class="raw" style="margin-top: 80px; margin-bottom: 20px;">
-    <a href="mailto:danieltseng8612@gmail.com"><img src="../img/email.png" alt=""
-        style="width:20px; margin-left: 10px; margin-right: 10px;"></a>
-    <a href="https://www.linkedin.com/in/daniel-tseng/" target="_blank"><img src="../img/linkedin.png" alt=""
-        style="width:20px; margin-left: 10px; margin-right: 10px;"></a>
-    <a href="https://dribbble.com/danielt8612" target="_blank"><img src="../img/dribbble.png" alt=""
-        style="width:20px; margin-left: 10px; margin-right: 10px;"></a>
+    <a href="mailto:danieltseng8612@gmail.com"><img src="../img/email.png" alt="Email Daniel"
+        style="width:20px; margin-left: 10px; margin-right: 10px;" width="256" height="192" loading="lazy" decoding="async"></a>
+    <a href="https://www.linkedin.com/in/daniel-tseng/" target="_blank"><img src="../img/linkedin.png" alt="Daniel on LinkedIn"
+        style="width:20px; margin-left: 10px; margin-right: 10px;" width="256" height="256" loading="lazy" decoding="async"></a>
+    <a href="https://dribbble.com/danielt8612" target="_blank"><img src="../img/dribbble.png" alt="Daniel on Dribbble"
+        style="width:20px; margin-left: 10px; margin-right: 10px;" width="256" height="256" loading="lazy" decoding="async"></a>
   </div>
 
   <div class="raw">
@@ -181,15 +180,6 @@
 
 
 </div><!-- container -->
-
-
-
-
-
-
-
-
-<script src="../js/main.js"></script>
 </body>
 
 </html>
