@@ -618,6 +618,16 @@ a:focus-visible, button:focus-visible {
 }
 @media screen and (max-width: 767px) {
   #wrapper { display: flex; }
+  /* Override the legacy header span.menu rule for the button's icon. */
+  #wrapper .main-item {
+    display: block;
+    position: relative;
+    top: auto;
+    right: auto;
+    padding: 0;
+    font-size: inherit;
+  }
+  #wrapper .line { left: 0; }
   html body header nav.nav-top ul {
     width: min(240px, calc(100vw - 40px)) !important;
   }
